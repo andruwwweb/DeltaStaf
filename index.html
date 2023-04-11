@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/main.css">
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <title>Дельта стаф</title>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="./assets/logo.svg">
+        </div>
+        <nav class="nav">
+            <a href="">НАШИ УСЛУГИ</a>
+            <a href="">О КОМПАНИИ</a>
+            <a href="">ЭТАПЫ РАБОТЫ</a>
+            <a href="">ПРЕИМУЩЕСТВА</a>
+            <a href="">КОНТАКТЫ</a>
+        </nav>
+        <div class="contacts">
+            <div class="tel">
+                <img src="./assets/tel.svg">
+                <a href="tel:+79270070505">+7 (927) 007-05-05</a>
+            </div>
+            <div class="mail">
+                <img src="./assets/mail.svg">
+                <a href="mailto:personal@delta-staf.ru">personal@delta-staf.ru</a>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="banner">
+            <div class="offer-text">
+                <h1><span>Дельта</span><span>стаф</span></h1>
+                <p>Оптимальные кадровые решения для вашего предприятия.</p>
+            </div>
+            <form class="form">
+                <input type="text" placeholder="Ваше имя">
+                <input type="tel" placeholder="Ваш номер телефона">
+                <input type="text" placeholder="Ваш запрос">
+                <button>НАНЯТЬ СОТРУДНИКА</button>
+                <p>Нажимая на кнопку “нанять сотрудника” вы даете свое согласие на обработку ваших персональных данных</p>
+            </form>
+        </div>
+        <div class="services">
+            <h2><span>наши</span><span> услуги</span></h2>
+            <p>Эффективно решаем различные кадровые вопросы вашего предприятия, берем юридическую и правовую ответственность за сотрудников на себя. Высвобождаем для вас временные и финансовые ресурсы.</p>
+            <div class="products">
+                <div class="prod">
+                    <h3 class="prod-h3">АУТСОРСИНГ</h3>
+                    <p class="prod-p">Передача отдельных производственных процессов сторонней организации.</p>
+                    <div class="open-modal">подробнее</div>
+                </div>
+                <div class="prod">
+                    <h3 class="prod-h3">АУТСТАФФИНГ</h3>
+                    <p class="prod-p">Передача всех бизнес-процессов, связанных с персоналом, сторонней компании.</p>
+                    <div class="open-modal">подробнее</div>
+                </div>
+            </div>
+        </div>
+        <div class="about">
+            <h3><span>о</span><span> компании</span></h3>
+            <p>Эффективно решаем различные кадровые вопросы вашего предприятия, берем юридическую и правовую ответственность за сотрудников на себя. Высвобождаем для вас временные и финансовые ресурсы.</p>
+            <a href="https://drive.google.com/file/d/18Ow13ZD8sWPRrxL6n05lN_2FID08Mahs/view">АККРЕДИТАЦИЯ</a>
+        </div>
+        <div class="worksteps">
+            <h3><span>ЭТАПЫ</span><span> РАБОТ</span></h3>
+            <p>Мы стремимся к максимально прозрачному и понятному сотрудничеству. Посмотрите, что произойдет, когда вы начнете работу с нами:</p>
+            <div class="steps-box">
+                <div class="count">
+                    <p class="workstep-button">— 1</p>
+                    <p class="workstep-button">— 2</p>
+                    <p class="workstep-button">— 3</p>
+                    <p class="workstep-button">— 4</p>
+                    <p class="workstep-button">— 5</p>
+                    <p class="workstep-button">— 6</p>
+                </div>
+                <div class="item">
+                    <div class="text">
+                        <h4>ЗАЯВКА</h4>
+                        <p>Вы оставляете заявку на нашем сайте. Менеджер созванивается с вами, подбирает наиболее оптимальный вариант сотрудничества.</p>
+                    </div>
+                    <div class="image">
+                        <img class="workstep-image" src="./assets/step1.png">
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="text">
+                        <h4>ОФОРМЛЕНИЕ ДОГОВОРА</h4>
+                        <p>После выбора определенного спектра услуг заключаем договор на сотрудничество.</p>
+                    </div>
+                    <div class="image">
+                        <img class="workstep-image" src="./assets/step2.png">
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="text">
+                        <h4>ПОДБОР ПЕРСОНАЛА</h4>
+                        <p>Вы сообщаете нам информацию об объеме работ, оборудовании и пожеланиях по сотрудникам, мы производим подбор подходящей команды.</p>
+                    </div>
+                    <div class="image">
+                        <img class="workstep-image" src="./assets/step3.png">
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="text">
+                        <h4>ВЫПОЛНЕНИЕ РАБОТ</h4>
+                        <p>Подобранный персонал выполняет работы в течение указанного в договоре периода времени либо до выполнения всего пула работ.</p>
+                    </div>
+                    <div class="image">
+                        <img class="workstep-image" src="./assets/step4.png">
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="text">
+                        <h4>РАСЧЕТ С СОТРУДНИКАМИ</h4>
+                        <p>Ежемесячно мы производим подсчет количества отработанных сотрудниками часов и выплачиваем им заработную плату.</p>
+                    </div>
+                    <div class="image">
+                        <img class="workstep-image" src="./assets/step5.png">
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="text">
+                        <h4>ОПЛАТА НАШИХ УСЛУГ</h4>
+                        <p>Заказчик оплачивает услуги нашей компании. Если необходимый объем работ был выполнен и наши услуги больше не требуются, мы закрываем договор.</p>
+                    </div>
+                    <div class="image">
+                        <img class="workstep-image" src="./assets/step6.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="offer">
+            <div class="offer-text">
+                <h5>оставить заявку</h5>
+                <p>Напишите нам и получите услугу менеджера объекта бесплатно!</p>
+            </div>
+            <form class="offer-form">
+                <input type="text" placeholder="Ваше имя">
+                <input type="number" placeholder="Ваш номер телефона">
+                <button>Оставить заявку</button>
+                <p>Нажимая на кнопку “нанять сотрудника” вы даете свое согласие на обработку ваших персональных данных</p>
+            </form>
+        </div>
+
+        <div class="advantages">
+            <h4><span>наши</span><span> преимущества</span></h4>
+            <p>Благодаря сотрудничеству с нами вы сможете высвободить до 30% временных ресурсов и направить их на развитие непосредственно бизнеса.</p>
+            <div class="advantages-body">
+                <div class="text">
+                    <h6>С НАМИ ВЫГОДНО:</h6>
+                    <p><img src="./assets/redline.svg">Снижаем налоговую нагрузку по ФОТ</p>
+                    <p><img src="./assets/redline.svg">Снижаем нагрузку на кадровую, юридическую и бухгалтерскую службы</p>
+                    <p><img src="./assets/redline.svg">Работаем с НДС 20%, снижаем налог на прибыль</p>
+                    <h6>С НАМИ УДОБНО:</h6>
+                    <p><img src="./assets/blueline.svg">Качественно подбираем персонал в соответствии с заявкой;</p>
+                    <p><img src="./assets/blueline.svg">Предоставляем персонал на любые сроки;</p>
+                    <p><img src="./assets/blueline.svg">Имеем собственную базу работников;</p>
+                    <p><img src="./assets/blueline.svg">Используем множество ресурсов для привлечения персонала;</p>
+                    <p><img src="./assets/blueline.svg">Трудоустраиваем персонал согласно законодательству РФ;</p>
+                    <p><img src="./assets/blueline.svg">Трудоустраиваем персонал согласно законодательству РФ;</p>
+                    <p><img src="./assets/blueline.svg">Ведем учет рабочего времени предоставленного персонала;</p>
+                    <p><img src="./assets/blueline.svg">Избавляем от трудовых споров и риска забастовок;</p>
+                    <p><img src="./assets/blueline.svg">Производим замену персонала в кратчайшие сроки;</p>
+                    <p><img src="./assets/blueline.svg">Выводим персонал по запросу в случае снижения объемов;</p>
+                    <p><img src="./assets/blueline.svg">При заявке от 20 единиц предоставляем менеджера объекта бесплатно.</p>
+                </div>
+                <div class="advantages-image"></div>
+            </div>
+        </div>
+        <div id="map"></div>
+    </main>
+    <footer class="footer">
+        <div class="logo">
+            <img src="./assets/logo.svg">
+        </div>
+        <nav class="nav">
+            <a href="">НАШИ УСЛУГИ</a>
+            <a href="">О КОМПАНИИ</a>
+            <a href="">ЭТАПЫ РАБОТЫ</a>
+            <a href="">ПРЕИМУЩЕСТВА</a>
+            <a href="">КОНТАКТЫ</a>
+        </nav>
+        <div class="contacts">
+            <div class="tel">
+                <img src="./assets/tel.svg">
+                <a href="tel:+79270070505">+7 (927) 007-05-05</a>
+            </div>
+            <div class="mail">
+                <img src="./assets/mail.svg">
+                <a href="mailto:personal@delta-staf.ru">personal@delta-staf.ru</a>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal-1"></div>
+    <div class="modal-2"></div>
+    <script src="./script.js"></script>
+</body>
+</html>
