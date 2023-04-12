@@ -59,4 +59,28 @@ document.addEventListener('DOMContentLoaded', () => {
         myMap.controls.remove('rulerControl');
         myMap.controls.remove('typeSelector');
     };
+
+    const modals = document.querySelectorAll('.modal-layout');
+    const openModalButtons = document.querySelectorAll('.open-modal');
+    const closeModalButtons = document.querySelectorAll('.cross');
+    const body = document.querySelector('body');
+
+    function showModal(i) {
+        modals[i].classList.add('modal-active')
+    }
+    function closeModal(i) {
+        modals[i].classList.remove('modal-active');
+    }
+    openModalButtons.forEach((item, index) => {
+        item.addEventListener('click', () => {
+            showModal(index);
+            body.style.overflow = 'hidden'
+        })
+    });
+    closeModalButtons.forEach((item, index) => {
+        item.addEventListener('click', () => {
+            closeModal(index);
+            body.style.overflow = 'scroll'
+        })
+    });
 })

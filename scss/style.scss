@@ -33,6 +33,10 @@ body {
         outline: none;
     }
 }
+.container {
+    width: 100%;
+    overflow: hidden;
+}
 .main {
     width: 100%;
 }
@@ -44,7 +48,6 @@ body {
     align-items: center;
     transform: translateX(100%);
     transition: all 0.6s ease-in-out;
-
 }
 .footer {
     display: flex;
@@ -57,14 +60,14 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    .tel, .mail {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        a {
-            color: $black;
-            margin-left: 10px;
-        }
+}
+.tel, .mail {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    a {
+        color: $black;
+        margin: 10px;
     }
 }
 .logo {
@@ -76,9 +79,18 @@ nav {
     align-items: center;
     a {
         margin: 0 20px;
+        padding: 3px;
+        border-bottom: 1px solid $white;
         color: $black;
         font-size: 14px;
         font-weight: 600;
+        transition: all 0.4s ease-in-out;
+        &:hover {
+            transform: scale(107%);
+            border-bottom: 3px solid $red;
+            padding-bottom: 3px;
+            transition: all 0.4s ease-in-out;
+        }
     }
 }
 .banner {
@@ -89,34 +101,6 @@ nav {
     padding: 50px 50px 50px 0;
     transform: translateX(-100%);
     transition: all 0.6s ease-in-out;
-    .offer-text {
-        width: 53%;
-        h1 {
-            width: 95%;
-            text-align: center;
-            padding: 20px;
-            font-size: 64px;
-            line-height: 78px;
-            text-transform: uppercase;
-            background: rgba(255, 255, 255, 0.8);
-            backdrop-filter: blur(2px);
-            span {
-                color: $red;
-                font-weight: 700;
-            }
-            span:nth-child(1) {
-                color: $blue;
-            }
-        }
-        p {
-            width: 95%;
-            color: $white;
-            font-weight: 600;
-            font-size: 32px;
-            line-height: 39px;
-            margin: 7px 0 0 20px;
-        }
-    }
     .form {
         width: 47%;
         display: flex;
@@ -145,6 +129,11 @@ nav {
             -moz-border-radius: 15px;
             -ms-border-radius: 15px;
             -o-border-radius: 15px;
+            transition: all 0.4s ease-in-out;
+            &:hover {
+                transition: all 0.4s ease-in-out;
+                transform: scale(107%);
+            }
         }
         p {
             width: 80%;
@@ -155,12 +144,42 @@ nav {
         }
     }
 }
+.offer-text {
+    width: 53%;
+    h1 {
+        width: 95%;
+        text-align: center;
+        padding: 20px;
+        font-size: 44px;
+        line-height: 58px;
+        text-transform: uppercase;
+        background: rgba(255, 255, 255, 0.8);
+        backdrop-filter: blur(2px);
+        span {
+            color: $red;
+            font-weight: 700;
+        }
+        span:nth-child(1) {
+            color: $blue;
+        }
+    }
+    p {
+        width: 95%;
+        color: $white;
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 39px;
+        margin: 7px 0 0 20px;
+    }
+}
 .translated {
     transform: translateX(0);
     transition: all 0.6s ease-in-out;
 }
 .services {
     margin-top: 40px;
+    overflow: hidden;
+    width: 100%;
     h2 {
         background-color: #FFFFFF;
         width: fit-content;
@@ -188,54 +207,60 @@ nav {
         display: flex;
         justify-content: space-evenly;
         align-items: center;
-        .prod {
-            position: relative;
-            background: url(../assets/service-1.png);
-            height: fit-content;
-            max-height: 300px;
-            width: 40%;
-            border: 2px solid $red;
-            padding: 30px 0;
-            .prod-h3 {
-                width: 100%;
-                text-align: center;
-                color: #FFFFFF;
-                font-weight: 600;
-                font-size: 32px;
-                line-height: 40px;
-            }
-            .prod-p {
-                width: 90%;
-                font-size: 24px;
-                line-height: 30px;
-                color: $white;
-                text-align: center;
-                margin: 0;
-                font-weight: 400;
-                margin: 20px auto 110px;
-            }
-            .open-modal {
-                position: absolute;
-                color: $white;
-                text-align: center;
-                background: $red;
-                bottom: 0;
-                width: 100%;
-                left: 0;
-                height: 70px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                font-weight: 600;
-                font-size: 24px;
-                line-height: 30px;
-                text-transform: uppercase;
-            }
-        }
-        .prod:nth-child(2) {
-            background: url(../assets/service-2.png);
+    }
+}
+.prod {
+    position: relative;
+    background: url(../assets/service-1.png);
+    height: fit-content;
+    max-height: 300px;
+    width: 40%;
+    border: 2px solid $red;
+    padding: 30px 0;
+    .prod-h3 {
+        width: 100%;
+        text-align: center;
+        color: #FFFFFF;
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 40px;
+    }
+    .prod-p {
+        width: 90%;
+        font-size: 24px;
+        line-height: 30px;
+        color: $white;
+        text-align: center;
+        margin: 0;
+        font-weight: 400;
+        margin: 20px auto 110px;
+    }
+    .open-modal {
+        position: absolute;
+        color: $white;
+        text-align: center;
+        background: $red;
+        bottom: 0;
+        width: 100%;
+        left: 0;
+        height: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 30px;
+        text-transform: uppercase;
+        transition: all .4s ease-in-out;
+        cursor: pointer;
+        &:hover {
+            transition: all .4s ease-in-out;
+            text-decoration: underline;
         }
     }
+}
+.prod:nth-child(2) {
+    background: url(../assets/service-2.png);
 }
 .about {
     width: 100%;
@@ -278,6 +303,11 @@ nav {
         text-align: center;
         font-size: 24px;
         line-height: 30px;
+        transition: all 0.4s ease-in-out;
+        &:hover {
+            transition: all 0.4s ease-in-out;
+            transform: scale(107%);
+        }
     }
 }
 .worksteps {
@@ -305,99 +335,41 @@ nav {
         font-size: 24px;
         line-height: 30px;
     }
-    .steps-box {
-        margin: 40px auto;
-        width: 90%;
+}
+.steps-box {
+    margin: 40px auto;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    position: relative;
+    overflow: hidden;
+    .count {
         display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        position: relative;
-        overflow: hidden;
-        .count {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            width: 10%;
-            p {
-                margin: 0 0 10px 0;
-            }
-        }
-
-        .item {
-            .text {
-                width: 100%;
-                h4 {
-                    font-weight: 600;
-                    font-size: 24px;
-                    line-height: 30px;
-                    color: $blue;
-                }
-                p {
-                    font-size: 24px;
-                    line-height: 30px;
-                    margin: 30px 0 0 0;
-                    color: $black;
-                    width: 70%;
-                }
-            }
+        flex-direction: column;
+        justify-content: space-between;
+        width: 10%;
+        p {
+            margin: 0 0 10px 0;
+            cursor: pointer;
         }
     }
 }
-.offer {
-    padding: 60px;
-    width: 100%;
-    margin-top: 40px;
-    background: url(../assets/offer-back.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    .offer-text {
-        width: 40%;
-        h5 {
-            text-transform: uppercase;
+.item {
+    .text {
+        width: 100%;
+        h4 {
             font-weight: 600;
-            font-size: 32px;
-            line-height: 40px;
-            color: $white;
-        }
-        p {
-            margin-top: 20px;
             font-size: 24px;
             line-height: 30px;
-            color: $white;
-        }
-    }
-    .offer-form {
-        width: 40%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        input {
-            height: 45px;
-            width: 90%;
-            margin-bottom: 15px;
-            padding: 10px;
-        }
-        button {
-            background: #8E1A11;
-            border-radius: 15px;
-            width: 90%;
-            color: $white;
-            font-size: 24px;
-            text-transform: uppercase;
-            line-height: 30px;
-            padding: 12px;
-            margin-top: 20px;
+            color: $blue;
         }
         p {
-            margin-top: 15px;
-            width: 90%;
-            font-size: 12px;
-            line-height: 14px;
-            color: $white;
+            font-size: 24px;
+            line-height: 30px;
+            margin: 30px 0 0 0;
+            color: $black;
+            width: 70%;
         }
     }
 }
@@ -427,48 +399,50 @@ nav {
         font-size: 24px;
         line-height: 30px;
     }
-    .advantages-body {
-        margin-top: 60px;
+}
+.advantages-body {
+    margin-top: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.text {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    h6 {
+        margin-left: 100px;
+        margin-bottom: 30px;
+        font-size: 20px;
+        line-height: 30px;
+        color: $black;
+        font-weight: 600;
+        margin-top: 40px;
+    }
+    p {
         width: 100%;
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: flex-start;
-        .text {
-            width: 60%;
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
-            align-items: flex-start;
-            h6 {
-                margin-left: 100px;
-                margin-bottom: 30px;
-                font-size: 20px;
-                line-height: 30px;
-                color: $black;
-                font-weight: 600;
-                margin-top: 40px;
-            }
-            p {
-                width: 100%;
-                display: flex;
-                justify-content: flex-start;
-                align-items: flex-start;
-                margin: 0 20px 20px 0;
-                img {
-                    display: block;
-                    margin-right: 10px;
-                    transform: scale(90%) translateY(5px);
-                }
-            }
-        }
-        .advantages-image {
-            width: calc(1440px - 60%);
-            height: 1140px;
-            background: url(../assets/adv-block.png);
-            background-size: cover;
-            background-repeat: no-repeat;
+        margin: 0 20px 20px 0;
+        font-size: 18px;
+        line-height: 24px;
+        img {
+            display: block;
+            margin-right: 10px;
+            transform: scale(90%) translateY(5px);
         }
     }
+}
+.advantages-image {
+    width: calc(1440px - 60%);
+    height: 1140px;
+    background: url(../assets/adv-block.png);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .image {
         transform: scale(0);
@@ -500,9 +474,306 @@ nav {
 }
 #map {
     width: 100%;
-    height: 400px;
+    height: 500px;
     position: relative;
 }
-[class*="map-copyrights-promo"], [class*="copyright__wrap"] {
+.info {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    z-index: 10;
+    width: 40%;
+    height: 85%;
+    padding: 20px;
+    background: rgba(3, 11, 70, 0.8);
+    backdrop-filter: blur(2px);
+    h5 {
+        font-weight: 600;
+        font-size: 26px;
+        line-height: 32px;
+        text-transform: uppercase;
+        color: $white;
+        margin-bottom: 10px;
+    }
+    p {
+        margin-bottom: 10px;
+        a {
+            font-size: 18px;
+            line-height: 24px;
+            color: $white;
+        }
+    }
+    p {
+        font-size: 20px;
+        line-height: 26px;
+        color: $white;
+    }
+    form {
+        margin-top: 20px;
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        input {
+            height: 40px;
+            margin-bottom: 10px;
+            width: 100%;
+            padding-left: 10px;
+        }
+        button {
+            width: 100%;
+            background: #8E1A11;
+            border-radius: 15px;
+            padding: 10px;
+            color: $white;
+            text-transform: uppercase;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 26px;
+            transition: all 0.4s ease-in-out;
+            &:hover {
+                transform: scale(107%);
+                transition: all 0.4s ease-in-out;
+            }
+        }
+        p {
+            margin: 20px 0 0 0;
+            font-size: 12px;
+            line-height: 14px;
+            color: $white;
+        }
+    }
+}
+[class*="map-copyrights-promo"], [class*="copyright__wrap"], [class*="zoom"], [class*="float-button"] {
     display: none !important;
-} 
+}
+.modal-layout {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: block;
+    padding-top: 50px;
+    background: rgba(0, 0, 0, 0.7);
+    overflow: scroll;
+    display: none;
+}
+.modal {
+    background: $white;
+    width: 80%;
+    height: fit-content;
+    border: 2px solid $blue;
+    margin: 0 auto;
+    position: relative;
+    .cross {
+        position: absolute;
+        top: 6px;
+        right: 10px;
+        transition: all 0.4s ease-in-out;
+        &:hover {
+            transform: scale(120%);
+            transition: all 0.4s ease-in-out;
+        }
+    }
+    p {
+        margin: 30px auto 30px 60px;
+        font-size: 22px;
+        line-height: 28px;
+        width: 70%;
+    }
+    h6 {
+        font-weight: 600;
+        margin: 20px auto 20px 60px;
+        color: $blue;
+        font-size: 24px;
+        line-height: 30px;
+    }
+    .offer {
+        padding: 40px;
+        .offer-text-block {
+            p {
+                width: 100%;
+                margin: 20px 0 0 0;
+                font-size: 20px;
+                line-height: 26px;
+                color: $white;
+            }
+        }
+        .offer-form {
+            p {
+                   margin: 10px 0 0 0;
+            }
+        }
+    }
+}
+.head {
+    background: url(../assets/modal1-head.png);
+    padding: 60px 0 60px 0;
+    h5 {
+        margin-top: 60px;
+        background: #FFFFFF;
+        padding: 12px 190px 12px 60px;
+        width: fit-content;
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 38px;
+        text-transform: uppercase;
+        color: $blue;
+    }
+    p {
+        width: 70%;
+        margin: 20px auto 20px 60px;
+        color: $white;
+        font-size: 24px;
+        line-height: 30px;
+        font-weight: 600;
+    }
+}
+.adv {
+    width: 100%;
+    p {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+        margin: 0 auto 20px 60px;
+        img {
+            display: block;
+            margin-right: 15px;
+            transform: scale(80%);
+        }
+    }
+}
+.offer {
+    padding: 60px;
+    width: 100%;
+    margin-top: 40px;
+    background: url(../assets/offer-back.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.offer-text-block {
+    width: 40%;
+    h5 {
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 40px;
+        color: $white;
+    }
+    p {
+        margin-top: 20px;
+        font-size: 24px;
+        line-height: 30px;
+        color: $white;
+    }
+}
+.offer-form {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    input {
+        height: 45px;
+        width: 90%;
+        margin-bottom: 15px;
+        padding: 10px;
+    }
+    button {
+        background: #8E1A11;
+        border-radius: 15px;
+        width: 90%;
+        color: $white;
+        font-size: 24px;
+        text-transform: uppercase;
+        line-height: 30px;
+        padding: 12px;
+        margin-top: 20px;
+        transition: all 0.4s ease-in-out;
+        &:hover {
+            transform: scale(107%);
+            transition: all 0.4s ease-in-out;
+        }
+    }
+    p {
+        margin-top: 15px;
+        width: 90%;
+        font-size: 12px;
+        line-height: 14px;
+        color: $white;
+    }
+}
+.modal-active {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: block;
+    padding-top: 50px;
+    background: rgba(0, 0, 0, 0.7);
+    overflow: scroll;
+    display: block;
+}
+
+@media (min-width: 1200px) and (max-width: 1439px) {
+    .logo {
+        transform: scale(80%);
+        margin-left: 10px;
+    }
+    nav {
+        a {
+            margin: 10px;
+            font-size: 12px;
+        }
+    }
+    .contacts {
+        margin-right: 10px;
+        .tel, .mail {
+            font-size: 12px;
+        }
+    }
+    .services {
+        .products {
+            width: 100%;
+            .prod {
+                .prod-p {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+    .adv {
+        p {
+            font-size: 20px;
+        }
+    }
+    .offer-text-block {
+        width: 45%;
+    }
+    .offer-form {
+        width: 45%;
+    }
+    .about {
+        p {
+            width: 80%;
+        }
+    }
+    .item {
+        .text{
+            p {
+                width: 90%;
+            }
+        }
+    }
+    .advantages-image {
+        transform: scale(90%);
+    }
+}

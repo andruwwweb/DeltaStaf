@@ -28,6 +28,11 @@ body input:focus {
   outline: none;
 }
 
+.container {
+  width: 100%;
+  overflow: hidden;
+}
+
 .main {
   width: 100%;
 }
@@ -54,14 +59,15 @@ body input:focus {
   flex-direction: column;
   justify-content: flex-start;
 }
-.contacts .tel, .contacts .mail {
+
+.tel, .mail {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
 }
-.contacts .tel a, .contacts .mail a {
+.tel a, .mail a {
   color: #070606;
-  margin-left: 10px;
+  margin: 10px;
 }
 
 .logo {
@@ -75,9 +81,18 @@ nav {
 }
 nav a {
   margin: 0 20px;
+  padding: 3px;
+  border-bottom: 1px solid #f2f2f2;
   color: #070606;
   font-size: 14px;
   font-weight: 600;
+  transition: all 0.4s ease-in-out;
+}
+nav a:hover {
+  transform: scale(107%);
+  border-bottom: 3px solid #8E1A11;
+  padding-bottom: 3px;
+  transition: all 0.4s ease-in-out;
 }
 
 .banner {
@@ -88,34 +103,6 @@ nav a {
   padding: 50px 50px 50px 0;
   transform: translateX(-100%);
   transition: all 0.6s ease-in-out;
-}
-.banner .offer-text {
-  width: 53%;
-}
-.banner .offer-text h1 {
-  width: 95%;
-  text-align: center;
-  padding: 20px;
-  font-size: 64px;
-  line-height: 78px;
-  text-transform: uppercase;
-  background: rgba(255, 255, 255, 0.8);
-  backdrop-filter: blur(2px);
-}
-.banner .offer-text h1 span {
-  color: #8E1A11;
-  font-weight: 700;
-}
-.banner .offer-text h1 span:nth-child(1) {
-  color: #030B46;
-}
-.banner .offer-text p {
-  width: 95%;
-  color: #f2f2f2;
-  font-weight: 600;
-  font-size: 32px;
-  line-height: 39px;
-  margin: 7px 0 0 20px;
 }
 .banner .form {
   width: 47%;
@@ -146,6 +133,11 @@ nav a {
   -moz-border-radius: 15px;
   -ms-border-radius: 15px;
   -o-border-radius: 15px;
+  transition: all 0.4s ease-in-out;
+}
+.banner .form button:hover {
+  transition: all 0.4s ease-in-out;
+  transform: scale(107%);
 }
 .banner .form p {
   width: 80%;
@@ -155,6 +147,35 @@ nav a {
   margin-top: 10px;
 }
 
+.offer-text {
+  width: 53%;
+}
+.offer-text h1 {
+  width: 95%;
+  text-align: center;
+  padding: 20px;
+  font-size: 44px;
+  line-height: 58px;
+  text-transform: uppercase;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(2px);
+}
+.offer-text h1 span {
+  color: #8E1A11;
+  font-weight: 700;
+}
+.offer-text h1 span:nth-child(1) {
+  color: #030B46;
+}
+.offer-text p {
+  width: 95%;
+  color: #f2f2f2;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 39px;
+  margin: 7px 0 0 20px;
+}
+
 .translated {
   transform: translateX(0);
   transition: all 0.6s ease-in-out;
@@ -162,6 +183,8 @@ nav a {
 
 .services {
   margin-top: 40px;
+  overflow: hidden;
+  width: 100%;
 }
 .services h2 {
   background-color: #FFFFFF;
@@ -191,7 +214,8 @@ nav a {
   justify-content: space-evenly;
   align-items: center;
 }
-.services .products .prod {
+
+.prod {
   position: relative;
   background: url(../assets/service-1.png);
   height: fit-content;
@@ -200,7 +224,7 @@ nav a {
   border: 2px solid #8E1A11;
   padding: 30px 0;
 }
-.services .products .prod .prod-h3 {
+.prod .prod-h3 {
   width: 100%;
   text-align: center;
   color: #FFFFFF;
@@ -208,7 +232,7 @@ nav a {
   font-size: 32px;
   line-height: 40px;
 }
-.services .products .prod .prod-p {
+.prod .prod-p {
   width: 90%;
   font-size: 24px;
   line-height: 30px;
@@ -218,7 +242,7 @@ nav a {
   font-weight: 400;
   margin: 20px auto 110px;
 }
-.services .products .prod .open-modal {
+.prod .open-modal {
   position: absolute;
   color: #f2f2f2;
   text-align: center;
@@ -234,8 +258,15 @@ nav a {
   font-size: 24px;
   line-height: 30px;
   text-transform: uppercase;
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
 }
-.services .products .prod:nth-child(2) {
+.prod .open-modal:hover {
+  transition: all 0.4s ease-in-out;
+  text-decoration: underline;
+}
+
+.prod:nth-child(2) {
   background: url(../assets/service-2.png);
 }
 
@@ -281,6 +312,11 @@ nav a {
   text-align: center;
   font-size: 24px;
   line-height: 30px;
+  transition: all 0.4s ease-in-out;
+}
+.about a:hover {
+  transition: all 0.4s ease-in-out;
+  transform: scale(107%);
 }
 
 .worksteps {
@@ -309,7 +345,8 @@ nav a {
   font-size: 24px;
   line-height: 30px;
 }
-.worksteps .steps-box {
+
+.steps-box {
   margin: 40px auto;
   width: 90%;
   display: flex;
@@ -318,89 +355,32 @@ nav a {
   position: relative;
   overflow: hidden;
 }
-.worksteps .steps-box .count {
+.steps-box .count {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   width: 10%;
 }
-.worksteps .steps-box .count p {
+.steps-box .count p {
   margin: 0 0 10px 0;
+  cursor: pointer;
 }
-.worksteps .steps-box .item .text {
+
+.item .text {
   width: 100%;
 }
-.worksteps .steps-box .item .text h4 {
+.item .text h4 {
   font-weight: 600;
   font-size: 24px;
   line-height: 30px;
   color: #030B46;
 }
-.worksteps .steps-box .item .text p {
+.item .text p {
   font-size: 24px;
   line-height: 30px;
   margin: 30px 0 0 0;
   color: #070606;
   width: 70%;
-}
-
-.offer {
-  padding: 60px;
-  width: 100%;
-  margin-top: 40px;
-  background: url(../assets/offer-back.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.offer .offer-text {
-  width: 40%;
-}
-.offer .offer-text h5 {
-  text-transform: uppercase;
-  font-weight: 600;
-  font-size: 32px;
-  line-height: 40px;
-  color: #f2f2f2;
-}
-.offer .offer-text p {
-  margin-top: 20px;
-  font-size: 24px;
-  line-height: 30px;
-  color: #f2f2f2;
-}
-.offer .offer-form {
-  width: 40%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.offer .offer-form input {
-  height: 45px;
-  width: 90%;
-  margin-bottom: 15px;
-  padding: 10px;
-}
-.offer .offer-form button {
-  background: #8E1A11;
-  border-radius: 15px;
-  width: 90%;
-  color: #f2f2f2;
-  font-size: 24px;
-  text-transform: uppercase;
-  line-height: 30px;
-  padding: 12px;
-  margin-top: 20px;
-}
-.offer .offer-form p {
-  margin-top: 15px;
-  width: 90%;
-  font-size: 12px;
-  line-height: 14px;
-  color: #f2f2f2;
 }
 
 .advantages {
@@ -430,21 +410,23 @@ nav a {
   font-size: 24px;
   line-height: 30px;
 }
-.advantages .advantages-body {
+
+.advantages-body {
   margin-top: 60px;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: flex-start;
 }
-.advantages .advantages-body .text {
+
+.text {
   width: 60%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
 }
-.advantages .advantages-body .text h6 {
+.text h6 {
   margin-left: 100px;
   margin-bottom: 30px;
   font-size: 20px;
@@ -453,19 +435,22 @@ nav a {
   font-weight: 600;
   margin-top: 40px;
 }
-.advantages .advantages-body .text p {
+.text p {
   width: 100%;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
   margin: 0 20px 20px 0;
+  font-size: 18px;
+  line-height: 24px;
 }
-.advantages .advantages-body .text p img {
+.text p img {
   display: block;
   margin-right: 10px;
   transform: scale(90%) translateY(5px);
 }
-.advantages .advantages-body .advantages-image {
+
+.advantages-image {
   width: calc(1440px - 60%);
   height: 1140px;
   background: url(../assets/adv-block.png);
@@ -508,12 +493,300 @@ nav a {
 
 #map {
   width: 100%;
-  height: 400px;
+  height: 500px;
   position: relative;
 }
 
-[class*=map-copyrights-promo], [class*=copyright__wrap] {
+.info {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  z-index: 10;
+  width: 40%;
+  height: 85%;
+  padding: 20px;
+  background: rgba(3, 11, 70, 0.8);
+  backdrop-filter: blur(2px);
+}
+.info h5 {
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 32px;
+  text-transform: uppercase;
+  color: #f2f2f2;
+  margin-bottom: 10px;
+}
+.info p {
+  margin-bottom: 10px;
+}
+.info p a {
+  font-size: 18px;
+  line-height: 24px;
+  color: #f2f2f2;
+}
+.info p {
+  font-size: 20px;
+  line-height: 26px;
+  color: #f2f2f2;
+}
+.info form {
+  margin-top: 20px;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.info form input {
+  height: 40px;
+  margin-bottom: 10px;
+  width: 100%;
+  padding-left: 10px;
+}
+.info form button {
+  width: 100%;
+  background: #8E1A11;
+  border-radius: 15px;
+  padding: 10px;
+  color: #f2f2f2;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 26px;
+  transition: all 0.4s ease-in-out;
+}
+.info form button:hover {
+  transform: scale(107%);
+  transition: all 0.4s ease-in-out;
+}
+.info form p {
+  margin: 20px 0 0 0;
+  font-size: 12px;
+  line-height: 14px;
+  color: #f2f2f2;
+}
+
+[class*=map-copyrights-promo], [class*=copyright__wrap], [class*=zoom], [class*=float-button] {
   display: none !important;
+}
+
+.modal-layout {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  display: block;
+  padding-top: 50px;
+  background: rgba(0, 0, 0, 0.7);
+  overflow: scroll;
+  display: none;
+}
+
+.modal {
+  background: #f2f2f2;
+  width: 80%;
+  height: fit-content;
+  border: 2px solid #030B46;
+  margin: 0 auto;
+  position: relative;
+}
+.modal .cross {
+  position: absolute;
+  top: 6px;
+  right: 10px;
+  transition: all 0.4s ease-in-out;
+}
+.modal .cross:hover {
+  transform: scale(120%);
+  transition: all 0.4s ease-in-out;
+}
+.modal p {
+  margin: 30px auto 30px 60px;
+  font-size: 22px;
+  line-height: 28px;
+  width: 70%;
+}
+.modal h6 {
+  font-weight: 600;
+  margin: 20px auto 20px 60px;
+  color: #030B46;
+  font-size: 24px;
+  line-height: 30px;
+}
+.modal .offer {
+  padding: 40px;
+}
+.modal .offer .offer-text-block p {
+  width: 100%;
+  margin: 20px 0 0 0;
+  font-size: 20px;
+  line-height: 26px;
+  color: #f2f2f2;
+}
+.modal .offer .offer-form p {
+  margin: 10px 0 0 0;
+}
+
+.head {
+  background: url(../assets/modal1-head.png);
+  padding: 60px 0 60px 0;
+}
+.head h5 {
+  margin-top: 60px;
+  background: #FFFFFF;
+  padding: 12px 190px 12px 60px;
+  width: fit-content;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 38px;
+  text-transform: uppercase;
+  color: #030B46;
+}
+.head p {
+  width: 70%;
+  margin: 20px auto 20px 60px;
+  color: #f2f2f2;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 600;
+}
+
+.adv {
+  width: 100%;
+}
+.adv p {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto 20px 60px;
+}
+.adv p img {
+  display: block;
+  margin-right: 15px;
+  transform: scale(80%);
+}
+
+.offer {
+  padding: 60px;
+  width: 100%;
+  margin-top: 40px;
+  background: url(../assets/offer-back.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.offer-text-block {
+  width: 40%;
+}
+.offer-text-block h5 {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 40px;
+  color: #f2f2f2;
+}
+.offer-text-block p {
+  margin-top: 20px;
+  font-size: 24px;
+  line-height: 30px;
+  color: #f2f2f2;
+}
+
+.offer-form {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.offer-form input {
+  height: 45px;
+  width: 90%;
+  margin-bottom: 15px;
+  padding: 10px;
+}
+.offer-form button {
+  background: #8E1A11;
+  border-radius: 15px;
+  width: 90%;
+  color: #f2f2f2;
+  font-size: 24px;
+  text-transform: uppercase;
+  line-height: 30px;
+  padding: 12px;
+  margin-top: 20px;
+  transition: all 0.4s ease-in-out;
+}
+.offer-form button:hover {
+  transform: scale(107%);
+  transition: all 0.4s ease-in-out;
+}
+.offer-form p {
+  margin-top: 15px;
+  width: 90%;
+  font-size: 12px;
+  line-height: 14px;
+  color: #f2f2f2;
+}
+
+.modal-active {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  display: block;
+  padding-top: 50px;
+  background: rgba(0, 0, 0, 0.7);
+  overflow: scroll;
+  display: block;
+}
+
+@media (min-width: 1200px) and (max-width: 1439px) {
+  .logo {
+    transform: scale(80%);
+    margin-left: 10px;
+  }
+  nav a {
+    margin: 10px;
+    font-size: 12px;
+  }
+  .contacts {
+    margin-right: 10px;
+  }
+  .contacts .tel, .contacts .mail {
+    font-size: 12px;
+  }
+  .services .products {
+    width: 100%;
+  }
+  .services .products .prod .prod-p {
+    font-size: 20px;
+  }
+  .adv p {
+    font-size: 20px;
+  }
+  .offer-text-block {
+    width: 45%;
+  }
+  .offer-form {
+    width: 45%;
+  }
+  .about p {
+    width: 80%;
+  }
+  .item .text p {
+    width: 90%;
+  }
+  .advantages-image {
+    transform: scale(90%);
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
