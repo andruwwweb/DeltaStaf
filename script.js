@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             iconLayout: 'default#image',
             iconImageHref: './assets/point.png',
-            iconImageSize: [70, 75],
+            iconImageSize: [50, 55],
             iconImageOffset: [0, 0]
         });
         myMap.geoObjects.add(myPlacemark);
