@@ -111,4 +111,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (document.documentElement.clientWidth < 768) {
         calculateHeight();
     }
+
+    const head = document.querySelectorAll('.head');
+    head[1].style.background = 'url(./assets/modal2-head.png)';
 })
