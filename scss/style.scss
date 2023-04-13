@@ -46,8 +46,6 @@ body {
     width: 100%;
     justify-content: space-between;
     align-items: center;
-    transform: translateX(100%);
-    transition: all 0.6s ease-in-out;
 }
 .footer {
     display: flex;
@@ -99,8 +97,6 @@ nav {
     align-items: center;
     justify-content: center;
     padding: 50px 50px 50px 0;
-    transform: translateX(-100%);
-    transition: all 0.6s ease-in-out;
     .form {
         width: 47%;
         display: flex;
@@ -189,6 +185,7 @@ nav {
             font-size: 32px;
             line-height: 38px;
             color: $blue;
+            text-transform: uppercase;
         }
         span:nth-child(2) {
             color: $red;
@@ -722,7 +719,23 @@ nav {
     overflow: scroll;
     display: block;
 }
-
+.menu {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.line1 {
+    transform: rotateZ(-45deg) translateX(-55%);
+    transition: all 0.3s ease-in-out;
+}
+.line2 {
+    transform: translateX(-40px) scale(0);
+    transition: all 0.3s ease-in-out;
+}
+.line3 {
+    transform: rotateZ(45deg) translateX(-55%);
+    transition: all 0.3s ease-in-out;
+}
 @media (min-width: 1200px) and (max-width: 1439px) {
     .logo {
         transform: scale(80%);
@@ -775,5 +788,726 @@ nav {
     }
     .advantages-image {
         transform: scale(90%);
+    }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+    .header {
+        padding: 12px 0;
+        .logo {
+            display: none;
+        }
+        nav a {
+            font-size: 12px;
+        }
+    }
+    .banner {
+        .form {
+            button {
+                font-size: 20px;
+            }
+        }
+    }
+    .contacts {
+        justify-content: space-between;
+        .tel a, .mail a {
+            margin: 5px;
+            font-size: 12px;
+        }
+        .tel img, .mail img {
+            transform: scale(80%);
+        }
+    }
+    .offer-text {
+        h1 {
+            font-size: 36px;
+        }
+        p {
+            font-size: 24px;
+        }
+    }
+    .services {
+        h2 {
+            padding: 12px 190px 12px 40px;
+        }
+        p {
+            width: 85%;
+            font-size: 20px;
+        }
+        .products {
+            width: 100%;
+            .prod {
+                .prod-p {
+                    font-size: 18px;
+                }
+                .open-modal {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+    .about {
+        p {
+            width: 85%;
+            font-size: 20px;
+        }
+        a {
+            font-size: 20px;
+        }
+    }
+    .worksteps {
+        p {
+            font-size: 20px;
+            width: 80%;
+        }
+    }
+    .item {
+        .text {
+            p {
+                width: 90%;
+                font-size: 18px;
+                line-height: 24px;
+                margin: 15px 0 0 0;
+            }
+        }
+    }
+    .offer {
+        .offer-text-block {
+            width: 50%;
+        }
+        .offer-from {
+            width: 50%;
+        }
+    }
+    .advantages {
+        p {
+            font-size: 20px;
+            width: 80%;
+        }
+        .advantages-body {
+            .text {
+                width: 95%;
+                margin: 0 auto;
+                p {
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .advantages-image {
+        display: none;
+    }
+    .info form {
+        width: 90%;
+        p {
+            margin: 10px 0 0 0;
+        }
+    }
+    .footer {
+        padding: 12px 0;
+        .logo {
+            display: none;
+        }
+        nav a {
+            font-size: 12px;
+        }
+    }
+    .offer-form button {
+        margin-top: 10px;
+    }
+    .modal {
+        width: 90%;
+    }
+    .adv p {
+        font-size: 18px;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .container {
+        .line {
+            transition: all 0.3s ease-in-out;
+        }
+        overflow: hidden;
+        .header {
+            position: relative;
+            justify-content: flex-start;
+            .logo {
+                margin-left: 0;
+                transform: scale(70%);
+            }
+        }
+    }
+
+    nav {
+        position: absolute;
+        top: 80px;
+        right: 0;
+        background: #F4F5F6;
+        width: 50%;
+        display: block;
+        transform: translateX(100%);
+        z-index: 2;
+        transition: all 0.4s ease-in-out;
+        a {
+            display: block;
+            width: fit-content;
+            margin: 30px auto;
+        }
+    }
+    .nav-active {
+        z-index: 5;
+        position: absolute;
+        top: 80px;
+        right: 0;
+        background: $white;
+        width: 50%;
+        display: block;
+        transform: translateX(0);
+        transition: all 0.4s ease-in-out;
+    }
+    .banner {
+        .form {
+            width: 50%;
+            input {
+                height: 38px;
+                margin: 5px 0;
+            }
+            button {
+                margin-top: 12px;
+                font-size: 16px;
+            }
+        }
+    }
+    .offer-text {
+        p {
+            font-size: 18px;
+            line-height: 24px;
+            font-weight: 400;
+        }
+        h1 {
+            font-size: 34px;
+            padding: 10px;
+        }
+    }
+    .contacts {
+        .tel a, .mail a {
+            margin: 5px;
+        }
+    }
+    .services {
+        p {
+            width: 80%;
+            font-size: 16px;
+            line-height: 22px;
+        }
+        .products {
+            width: 100%;
+        }
+    }
+    .prod {
+        width: 45%;
+        height: 250px;
+        .prod-p {
+            font-size: 16px;
+            line-height: 22px;
+        }
+        .prod-h3 {
+            font-size: 26px;
+            line-height: 32px;
+        }
+        .open-modal {
+            height: 50px;
+            font-size: 20px;
+        }
+    }
+    .about {
+        p {
+            font-size: 16px;
+            line-height: 22px;
+            width: 80%;
+        }
+        a {
+            font-size: 20px;
+            line-height: 26px;
+        }
+    }
+    .worksteps {
+        p {
+            font-size: 16px;
+            width: 80%;
+            line-height: 22px;
+        }
+    }
+    .item {
+        .text {
+            h4 {
+                font-size: 18px;
+                line-height: 24px;
+            }
+            p {
+                width: 95%;
+                font-size: 16px;
+                line-height: 22px;
+                margin-top: 1px;
+            }
+        }
+        .image {
+            width: 50%;
+        }
+    }
+    .offer {
+        padding: 30px;
+        .offer-text-block {
+            width: 50%;
+            h5 {
+                font-size: 26px;
+                line-height: 32px;
+            }
+            p {
+                font-size: 18px;
+                line-height: 24px;
+            }
+        }
+        .offer-form {
+            width: 50%;
+            button {
+                margin-top: 0;
+                font-size: 20px;
+            }
+        }
+    }
+    .advantages {
+        p {
+            font-size: 18px;
+            line-height: 26px;
+            width: 80%;
+        }
+        .advantages-body {
+            .text {
+                width: 100%;
+                p {
+                    width: 100%;
+                    font-size: 16px;
+                    line-height: 22px;
+                    img {
+                        transform: scale(50%);
+                    }
+                }
+            }
+        }
+    }
+    .advantages-image {
+        display: none;
+    }
+    #map {
+        margin-top: 160px;
+        .info {
+            top: -120px;
+            transform: translateY(0);
+            width: 60%;
+            height: fit-content;
+            padding: 8px;
+            h5 {
+                font-size: 18px;
+                line-height: 22px;
+                margin-bottom: 8px;
+            }
+            p {
+                font-size: 14px;
+                line-height: 20px;
+                display: flex;
+                a {
+                    font-size: 14px;
+                    line-height: 20px;
+                    margin-right: 8px;
+                }
+            }
+            form {
+                input {
+                    height: 30px;
+                }
+                button {
+                    padding: 4px;
+                    font-size: 14px;
+                    line-height: 18px;
+                    border-radius: 10px;
+                }
+                p {
+                    font-size: 10px;
+                    line-height: 14px;
+                }
+            }
+        }
+    }
+    .footer {
+        .logo {
+            transform: scale(70%);
+            margin: 0;
+        }
+        nav {
+            display: none;
+        }
+    }
+    .modal {
+        .head {
+            padding: 30px 0;
+        }
+        width: calc(100% - 40px);
+        p {
+            width: 90%;
+            font-size: 18px;
+            line-height: 24px;
+        }
+        .adv {
+            width: 100%;
+            p {
+                font-size: 16px;
+                line-height: 22px;
+                margin: 10px 0;
+
+                img {
+                    width: 60px;;
+                }
+            }
+
+        }
+        .offer {
+            padding: 16px;
+            .offer-text-block {
+                p {
+                    font-size: 16px;
+                    line-height: 22px;
+                }
+            }
+            .offer-form {
+                p {
+                    font-size: 12px;
+                    line-height: 14px;
+                }
+                input {
+                    height: 35px;
+                }
+                button {
+                    font-size: 18px;
+                    line-height: 24px;
+                    padding: 8px;
+                }
+            }
+        }
+    }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+    .container {
+        .line {
+            transition: all 0.3s ease-in-out;
+        }
+        overflow: hidden;
+        .header {
+            position: relative;
+            justify-content: flex-start;
+            .logo {
+                margin-left: -30px;
+                transform: scale(70%);
+            }
+        }
+    }
+    nav {
+        position: absolute;
+        top: 80px;
+        right: 0;
+        background: #F4F5F6;
+        width: 50%;
+        display: block;
+        transform: translateX(100%);
+        z-index: 2;
+        transition: all 0.4s ease-in-out;
+        a {
+            display: block;
+            width: fit-content;
+            margin: 30px auto;
+        }
+    }
+    .nav-active {
+        z-index: 5;
+        position: absolute;
+        top: 80px;
+        right: 0;
+        background: $white;
+        width: 50%;
+        display: block;
+        transform: translateX(0);
+        transition: all 0.4s ease-in-out;
+    }
+    .banner {
+        flex-direction: column;
+        padding: 20px;
+        background-position: center;
+        .offer-text {
+            width: 90%;
+        }
+        .form {
+            margin-top: 20px;
+            width: 90%;
+            align-items: flex-start;
+            input {
+                height: 38px;
+                margin: 5px 0;
+            }
+            button {
+                margin-top: 12px;
+                font-size: 16px;
+            }
+        }
+    }
+    .offer-text {
+        p {
+            margin: 10px 0 0 0;
+            font-size: 18px;
+            line-height: 24px;
+            font-weight: 400;
+        }
+        h1 {
+            font-size: 34px;
+            padding: 10px;
+            margin: 0;
+            width: 100%;
+        }
+    }
+    .contacts {
+        .tel a, .mail a {
+            margin: 5px;
+        }
+    }
+    .services {
+        p {
+            width: 90%;
+            margin: 20px auto;
+            font-size: 16px;
+            line-height: 22px;
+        }
+        .products {
+            flex-direction: column;
+            width: 100%;
+        }
+    }
+    .prod {
+        width: 80%;
+        height: 250px;
+        margin-bottom: 20px;
+        .prod-p {
+            font-size: 16px;
+            line-height: 22px;
+        }
+        .prod-h3 {
+            font-size: 26px;
+            line-height: 32px;
+        }
+        .open-modal {
+            height: 50px;
+            font-size: 20px;
+        }
+    }
+    .about {
+        background-position: center;
+        p {
+            font-size: 16px;
+            line-height: 22px;
+            width: 90%;
+            margin: 20px auto 20px 20px;
+        }
+        a {
+            font-size: 16px;
+            line-height: 22px;
+            margin: 0 auto 20px 20px;
+        }
+    }
+    .worksteps {
+        p {
+            font-size: 16px;
+            width: 80%;
+            line-height: 22px;
+        }
+    }
+    .steps-box {
+        flex-direction: column;
+        .count {
+            flex-direction: row;
+            width: 50%;
+        }
+    }
+    .item {
+        top: 40px;
+        width: 100%;
+        flex-direction: column;
+        .text {
+            h4 {
+                font-size: 18px;
+                line-height: 24px;
+            }
+            p {
+                width: 95%;
+                font-size: 16px;
+                line-height: 22px;
+                margin: 10px 0;
+            }
+        }
+        .image {
+            width: 100%;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+    .offer {
+        flex-direction: column;
+        padding: 30px;
+        .offer-text-block {
+            width: 90%;
+            h5 {
+                font-size: 26px;
+                line-height: 32px;
+            }
+            p {
+                font-size: 18px;
+                line-height: 24px;
+            }
+        }
+        .offer-form {
+            background-size: contain;
+            background-position: center;
+            margin-top: 10px;
+            width: 90%;
+            justify-content: flex-start;
+            align-items: flex-start;
+            button {
+                margin-top: 0;
+                font-size: 20px;
+            }
+        }
+    }
+    .advantages {
+        p {
+            font-size: 18px;
+            line-height: 26px;
+            width: 80%;
+        }
+        h4 {
+            padding: 12px 20px 12px 60px;
+        }
+        .advantages-body {
+            .text {
+                width: 100%;
+                p {
+                    width: 90%;
+                    margin: 10px auto;
+                    font-size: 16px;
+                    line-height: 22px;
+                    img {
+                        transform: translateY(8px);
+                        width: 40px;
+                    }
+                }
+            }
+        }
+    }
+    .advantages-image {
+        display: none;
+    }
+    #map {
+        margin-top: 260px;
+        .info {
+            top: -220px;
+            transform: translateY(0);
+            width: 80%;
+            height: fit-content;
+            padding: 8px;
+            h5 {
+                font-size: 18px;
+                line-height: 22px;
+                margin-bottom: 8px;
+            }
+            p {
+                font-size: 14px;
+                line-height: 20px;
+                display: flex;
+                a {
+                    font-size: 14px;
+                    line-height: 20px;
+                    margin-right: 8px;
+                }
+            }
+            form {
+                input {
+                    height: 30px;
+                }
+                button {
+                    padding: 4px;
+                    font-size: 14px;
+                    line-height: 18px;
+                    border-radius: 10px;
+                }
+                p {
+                    font-size: 10px;
+                    line-height: 14px;
+                }
+            }
+        }
+    }
+    .footer {
+        .logo {
+            transform: scale(70%);
+            margin: 0;
+        }
+        nav {
+            display: none;
+        }
+    }
+    .modal {
+        .head {
+            padding: 30px 0;
+        }
+        width: calc(100% - 40px);
+        p {
+            width: 90%;
+            font-size: 18px;
+            line-height: 24px;
+        }
+        .adv {
+            width: 100%;
+            p {
+                font-size: 16px;
+                line-height: 22px;
+                margin: 10px 0;
+
+                img {
+                    width: 60px;;
+                }
+            }
+
+        }
+        .offer {
+            padding: 16px;
+            .offer-text-block {
+                p {
+                    font-size: 16px;
+                    line-height: 22px;
+                }
+            }
+            .offer-form {
+                p {
+                    font-size: 12px;
+                    line-height: 14px;
+                }
+                input {
+                    height: 35px;
+                }
+                button {
+                    font-size: 18px;
+                    line-height: 24px;
+                    padding: 8px;
+                }
+            }
+        }
     }
 }

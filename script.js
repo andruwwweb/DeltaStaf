@@ -23,13 +23,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const header = document.querySelector('.header')
     const banner = document.querySelector('.banner')
-    function translateMainContent() {
-        setTimeout(() => {
-            header.classList.add('translated');
-            banner.classList.add('translated');
-        }, 1000)
-    }
-    translateMainContent()
 
     ymaps.ready(init);
     let myMap, 
@@ -37,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function init(){ 
         myMap = new ymaps.Map("map", {
             center: [53.191681, 50.170271],
-            zoom: 17,
+            zoom: 17
         });
         myPlacemark = new ymaps.Placemark([53.191681, 50.170271], {
             hintContent: 'Партизанская улица, 82А',
@@ -83,4 +76,40 @@ document.addEventListener('DOMContentLoaded', () => {
             body.style.overflow = 'scroll'
         })
     });
+    const container = document.querySelector('.container')
+    const nav = document.querySelectorAll('.nav');
+    const navHeight = banner.offsetHeight;
+    if (document.documentElement.clientWidth < 992) {
+        const menuButton = document.createElement('div');
+        menuButton.classList.add('menu');
+        menuButton.innerHTML = `
+            <div class="line"><img src="./assets/newline.svg"></div>
+            <div class="line"><img src="./assets/newline.svg"></div>
+            <div class="line"><img src="./assets/newline.svg"></div>
+        `;
+        container.append(menuButton);
+
+        menuButton.addEventListener('click', () => {
+            const lines = document.querySelectorAll('.line');
+            lines[0].classList.toggle('line1');
+            lines[1].classList.toggle('line2');
+            lines[2].classList.toggle('line3');
+            nav[0].classList.toggle('nav-active');
+            nav[0].style.height = `${navHeight}px`
+            
+        })
+    }
+    const stepBox = document.querySelector('.steps-box');
+    const items = document.querySelectorAll('.item');
+    const count = document.querySelector('.count');
+
+    function calculateHeight () {
+        const countHeight = count.offsetHeight;
+        const itemHeight = items[0].offsetHeight;
+        const boxHeight = countHeight + itemHeight;
+        stepBox.style.height = `${boxHeight}px`
+    }
+    if (document.documentElement.clientWidth < 768) {
+        calculateHeight();
+    }
 })
