@@ -21,9 +21,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
     showItem(0);
 
-    const header = document.querySelector('.header')
-    const banner = document.querySelector('.banner')
-
     ymaps.ready(init);
     let myMap, 
     myPlacemark;
@@ -76,6 +73,8 @@ document.addEventListener('DOMContentLoaded', () => {
             body.style.overflow = 'scroll'
         })
     });
+    
+    const banner = document.querySelector('.banner')
     const container = document.querySelector('.container')
     const nav = document.querySelectorAll('.nav');
     const navHeight = banner.offsetHeight;

@@ -85,12 +85,20 @@ nav a {
   font-size: 14px;
   font-weight: 600;
   transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
 }
 nav a:hover {
   transform: scale(107%);
   border-bottom: 3px solid #8E1A11;
   padding-bottom: 3px;
   transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
 }
 
 .banner {
@@ -130,10 +138,22 @@ nav a:hover {
   -ms-border-radius: 15px;
   -o-border-radius: 15px;
   transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
 }
 .banner .form button:hover {
   transition: all 0.4s ease-in-out;
   transform: scale(107%);
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transform: scale(107%);
+  -moz-transform: scale(107%);
+  -ms-transform: scale(107%);
+  -o-transform: scale(107%);
 }
 .banner .form p {
   width: 80%;
@@ -175,6 +195,14 @@ nav a:hover {
 .translated {
   transform: translateX(0);
   transition: all 0.6s ease-in-out;
+  -webkit-transition: all 0.6s ease-in-out;
+  -moz-transition: all 0.6s ease-in-out;
+  -ms-transition: all 0.6s ease-in-out;
+  -o-transition: all 0.6s ease-in-out;
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
 }
 
 .services {
@@ -257,10 +285,18 @@ nav a:hover {
   text-transform: uppercase;
   transition: all 0.4s ease-in-out;
   cursor: pointer;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
 }
 .prod .open-modal:hover {
   transition: all 0.4s ease-in-out;
   text-decoration: underline;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
 }
 
 .prod:nth-child(2) {
@@ -310,10 +346,22 @@ nav a:hover {
   font-size: 24px;
   line-height: 30px;
   transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
 }
 .about a:hover {
   transition: all 0.4s ease-in-out;
   transform: scale(107%);
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transform: scale(107%);
+  -moz-transform: scale(107%);
+  -ms-transform: scale(107%);
+  -o-transform: scale(107%);
 }
 
 .worksteps {
@@ -445,6 +493,10 @@ nav a:hover {
   display: block;
   margin-right: 10px;
   transform: scale(90%) translateY(5px);
+  -webkit-transform: scale(90%) translateY(5px);
+  -moz-transform: scale(90%) translateY(5px);
+  -ms-transform: scale(90%) translateY(5px);
+  -o-transform: scale(90%) translateY(5px);
 }
 
 .advantages-image {
@@ -458,6 +510,14 @@ nav a:hover {
 .image {
   transform: scale(0);
   transition: all 0.4s ease-in-out;
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -ms-transform: scale(0);
+  -o-transform: scale(0);
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
 }
 
 .item {
@@ -471,11 +531,27 @@ nav a:hover {
   align-items: flex-start;
   transform: translateX(120%);
   transition: all 0.5s ease-in-out;
+  -webkit-transform: translateX(120%);
+  -moz-transform: translateX(120%);
+  -ms-transform: translateX(120%);
+  -o-transform: translateX(120%);
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
 }
 
 .step-active {
   transform: translateX(0);
   transition: all 0.5s ease-in-out;
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
 }
 
 .button-active {
@@ -486,6 +562,14 @@ nav a:hover {
 .image-active {
   transform: scale(100%);
   transition: all 0.4s ease-in-out;
+  -webkit-transform: scale(100%);
+  -moz-transform: scale(100%);
+  -ms-transform: scale(100%);
+  -o-transform: scale(100%);
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
 }
 
 #map {
@@ -505,6 +589,10 @@ nav a:hover {
   padding: 20px;
   background: rgba(3, 11, 70, 0.8);
   backdrop-filter: blur(2px);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
 }
 .info h5 {
   font-weight: 600;
@@ -552,10 +640,22 @@ nav a:hover {
   font-size: 20px;
   line-height: 26px;
   transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
 }
 .info form button:hover {
   transform: scale(107%);
   transition: all 0.4s ease-in-out;
+  -webkit-transform: scale(107%);
+  -moz-transform: scale(107%);
+  -ms-transform: scale(107%);
+  -o-transform: scale(107%);
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
 }
 .info form p {
   margin: 20px 0 0 0;
@@ -594,10 +694,22 @@ nav a:hover {
   top: 6px;
   right: 10px;
   transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
 }
 .modal .cross:hover {
   transform: scale(120%);
   transition: all 0.4s ease-in-out;
+  -webkit-transform: scale(120%);
+  -moz-transform: scale(120%);
+  -ms-transform: scale(120%);
+  -o-transform: scale(120%);
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
 }
 .modal p {
   margin: 30px auto 30px 60px;
@@ -664,6 +776,10 @@ nav a:hover {
   display: block;
   margin-right: 15px;
   transform: scale(80%);
+  -webkit-transform: scale(80%);
+  -moz-transform: scale(80%);
+  -ms-transform: scale(80%);
+  -o-transform: scale(80%);
 }
 
 .offer {
@@ -719,10 +835,22 @@ nav a:hover {
   padding: 12px;
   margin-top: 20px;
   transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
 }
 .offer-form button:hover {
   transform: scale(107%);
   transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transform: scale(107%);
+  -moz-transform: scale(107%);
+  -ms-transform: scale(107%);
+  -o-transform: scale(107%);
 }
 .offer-form p {
   margin-top: 15px;
@@ -754,23 +882,51 @@ nav a:hover {
 .line1 {
   transform: rotateZ(-45deg) translateX(-55%);
   transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transform: rotateZ(-45deg) translateX(-55%);
+  -moz-transform: rotateZ(-45deg) translateX(-55%);
+  -ms-transform: rotateZ(-45deg) translateX(-55%);
+  -o-transform: rotateZ(-45deg) translateX(-55%);
 }
 
 .line2 {
   transform: translateX(-40px) scale(0);
   transition: all 0.3s ease-in-out;
+  -webkit-transform: translateX(-40px) scale(0);
+  -moz-transform: translateX(-40px) scale(0);
+  -ms-transform: translateX(-40px) scale(0);
+  -o-transform: translateX(-40px) scale(0);
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
 }
 
 .line3 {
   transform: rotateZ(45deg) translateX(-55%);
   transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transform: rotateZ(45deg) translateX(-55%);
+  -moz-transform: rotateZ(45deg) translateX(-55%);
+  -ms-transform: rotateZ(45deg) translateX(-55%);
+  -o-transform: rotateZ(45deg) translateX(-55%);
 }
 
 @media (min-width: 1200px) and (max-width: 1439px) {
   .logo {
     transform: scale(80%);
     margin-left: 10px;
-  }
+    -webkit-transform: scale(80%);
+    -moz-transform: scale(80%);
+    -ms-transform: scale(80%);
+    -o-transform: scale(80%);
+}
   nav a {
     margin: 10px;
     font-size: 12px;
@@ -804,7 +960,11 @@ nav a:hover {
   }
   .advantages-image {
     transform: scale(90%);
-  }
+    -webkit-transform: scale(90%);
+    -moz-transform: scale(90%);
+    -ms-transform: scale(90%);
+    -o-transform: scale(90%);
+}
 }
 @media (min-width: 992px) and (max-width: 1199px) {
   .header {
@@ -828,7 +988,11 @@ nav a:hover {
   }
   .contacts .tel img, .contacts .mail img {
     transform: scale(80%);
-  }
+    -webkit-transform: scale(80%);
+    -moz-transform: scale(80%);
+    -ms-transform: scale(80%);
+    -o-transform: scale(80%);
+}
   .offer-text h1 {
     font-size: 36px;
   }
@@ -919,7 +1083,11 @@ nav a:hover {
   }
   .container .line {
     transition: all 0.3s ease-in-out;
-  }
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
   .container .header {
     position: relative;
     justify-content: flex-start;
@@ -927,7 +1095,11 @@ nav a:hover {
   .container .header .logo {
     margin-left: 0;
     transform: scale(70%);
-  }
+    -webkit-transform: scale(70%);
+    -moz-transform: scale(70%);
+    -ms-transform: scale(70%);
+    -o-transform: scale(70%);
+}
   nav {
     position: absolute;
     top: 80px;
@@ -938,7 +1110,11 @@ nav a:hover {
     transform: translateX(100%);
     z-index: 2;
     transition: all 0.4s ease-in-out;
-  }
+    -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    -o-transform: translateX(100%);
+}
   nav a {
     display: block;
     width: fit-content;
@@ -954,7 +1130,11 @@ nav a:hover {
     display: block;
     transform: translateX(0);
     transition: all 0.4s ease-in-out;
-  }
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+}
   .banner .form {
     width: 50%;
   }
@@ -1065,7 +1245,11 @@ nav a:hover {
   }
   .advantages .advantages-body .text p img {
     transform: scale(50%);
-  }
+    -webkit-transform: scale(50%);
+    -moz-transform: scale(50%);
+    -ms-transform: scale(50%);
+    -o-transform: scale(50%);
+}
   .advantages-image {
     display: none;
   }
@@ -1078,7 +1262,11 @@ nav a:hover {
     width: 60%;
     height: fit-content;
     padding: 8px;
-  }
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+}
   #map .info h5 {
     font-size: 18px;
     line-height: 22px;
@@ -1162,7 +1350,11 @@ nav a:hover {
   }
   .container .line {
     transition: all 0.3s ease-in-out;
-  }
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
   .container .header {
     position: relative;
     justify-content: flex-start;
@@ -1170,7 +1362,11 @@ nav a:hover {
   .container .header .logo {
     margin-left: -30px;
     transform: scale(70%);
-  }
+    -webkit-transform: scale(70%);
+    -moz-transform: scale(70%);
+    -ms-transform: scale(70%);
+    -o-transform: scale(70%);
+}
   nav {
     position: absolute;
     top: 80px;
@@ -1181,7 +1377,15 @@ nav a:hover {
     transform: translateX(100%);
     z-index: 2;
     transition: all 0.4s ease-in-out;
-  }
+    -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    -o-transform: translateX(100%);
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+}
   nav a {
     display: block;
     width: fit-content;
@@ -1197,7 +1401,15 @@ nav a:hover {
     display: block;
     transform: translateX(0);
     transition: all 0.4s ease-in-out;
-  }
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+}
   .banner {
     flex-direction: column;
     padding: 20px;
@@ -1357,7 +1569,11 @@ nav a:hover {
   .advantages .advantages-body .text p img {
     transform: translateY(8px);
     width: 40px;
-  }
+    -webkit-transform: translateY(8px);
+    -moz-transform: translateY(8px);
+    -ms-transform: translateY(8px);
+    -o-transform: translateY(8px);
+}
   .advantages-image {
     display: none;
   }
@@ -1370,7 +1586,11 @@ nav a:hover {
     width: 80%;
     height: fit-content;
     padding: 8px;
-  }
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+}
   #map .info h5 {
     font-size: 18px;
     line-height: 22px;
@@ -1402,7 +1622,11 @@ nav a:hover {
   .footer .logo {
     transform: scale(70%);
     margin: 0;
-  }
+    -webkit-transform: scale(70%);
+    -moz-transform: scale(70%);
+    -ms-transform: scale(70%);
+    -o-transform: scale(70%);
+}
   .footer nav {
     display: none;
   }
@@ -1455,7 +1679,11 @@ nav a:hover {
   }
   .container .line {
     transition: all 0.3s ease-in-out;
-  }
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
   .container .header {
     position: relative;
     justify-content: flex-start;
@@ -1463,7 +1691,11 @@ nav a:hover {
   .container .header .logo {
     margin-left: -30px;
     transform: scale(70%);
-  }
+    -webkit-transform: scale(70%);
+    -moz-transform: scale(70%);
+    -ms-transform: scale(70%);
+    -o-transform: scale(70%);
+}
   .container .header .contacts .tel, .container .header .contacts .mail {
     display: none;
   }
@@ -1477,7 +1709,15 @@ nav a:hover {
     transform: translateX(100%);
     z-index: 2;
     transition: all 0.4s ease-in-out;
-  }
+    -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    -o-transform: translateX(100%);
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+}
   nav a {
     display: block;
     width: fit-content;
@@ -1493,7 +1733,15 @@ nav a:hover {
     display: block;
     transform: translateX(0);
     transition: all 0.4s ease-in-out;
-  }
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+}
   .banner {
     flex-direction: column;
     padding: 10px;
@@ -1720,7 +1968,11 @@ nav a:hover {
     width: 100%;
     height: fit-content;
     padding: 8px;
-  }
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+}
   #map .info h5 {
     font-size: 18px;
     line-height: 22px;
