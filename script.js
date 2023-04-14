@@ -114,4 +114,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const head = document.querySelectorAll('.head');
     head[1].style.background = 'url(./assets/modal2-head.png)';
+
+    const textBlock = document.querySelector('.adv-text');
+    const imageBlock = document.querySelector('.advantages-image');
+
+    function equalSize() {
+        const screenWidth = document.documentElement.clientWidth;
+        const neededWidth = textBlock.offsetWidth;
+        const neededHeight = textBlock.offsetHeight;
+        imageBlock.style.cssText = `height: ${neededHeight}px; width: ${screenWidth - neededWidth}px`
+    }
+    equalSize()
 })

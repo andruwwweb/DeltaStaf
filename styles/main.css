@@ -42,6 +42,7 @@ body input:focus {
   width: 100%;
   justify-content: space-between;
   align-items: center;
+  padding: 15px 0;
 }
 
 .footer {
@@ -65,7 +66,7 @@ body input:focus {
 }
 .tel a, .mail a {
   color: #070606;
-  margin: 10px;
+  margin: 5px;
 }
 
 .logo {
@@ -83,7 +84,7 @@ nav a {
   border-bottom: 1px solid #f2f2f2;
   color: #070606;
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 500;
   transition: all 0.4s ease-in-out;
 }
 nav a:hover {
@@ -98,7 +99,7 @@ nav a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 50px 50px 50px 0;
+  padding: 50px 50px 50px 50px;
 }
 .banner .form {
   width: 47%;
@@ -118,8 +119,8 @@ nav a:hover {
   width: 80%;
   background: #8E1A11;
   font-weight: 600;
-  font-size: 24px;
-  line-height: 29px;
+  font-size: 18px;
+  line-height: 26px;
   text-align: center;
   padding: 10px;
   outline: none;
@@ -169,7 +170,7 @@ nav a:hover {
   font-weight: 600;
   font-size: 32px;
   line-height: 39px;
-  margin: 7px 0 0 20px;
+  margin: 7px 0 0 0;
 }
 
 .translated {
@@ -186,6 +187,7 @@ nav a:hover {
   background-color: #FFFFFF;
   width: fit-content;
   padding: 12px 190px 12px 20px;
+  margin-left: 40px;
 }
 .services h2 span {
   font-weight: 600;
@@ -231,7 +233,7 @@ nav a:hover {
 }
 .prod .prod-p {
   width: 90%;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 30px;
   color: #f2f2f2;
   text-align: center;
@@ -252,7 +254,7 @@ nav a:hover {
   align-items: center;
   justify-content: center;
   font-weight: 600;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 30px;
   text-transform: uppercase;
   transition: all 0.4s ease-in-out;
@@ -276,6 +278,7 @@ nav a:hover {
   margin-top: 60px;
   background: #FFFFFF;
   padding: 12px 190px 12px 60px;
+  margin-left: 40px;
   width: fit-content;
 }
 .about h3 span {
@@ -290,9 +293,9 @@ nav a:hover {
 }
 .about p {
   width: 70%;
-  margin: 20px auto 20px 60px;
+  margin: 20px auto 20px 40px;
   color: #f2f2f2;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 30px;
 }
 .about a {
@@ -304,7 +307,7 @@ nav a:hover {
   -moz-border-radius: 15px;
   -ms-border-radius: 15px;
   -o-border-radius: 15px;
-  margin: 20px auto 60px 60px;
+  margin: 20px auto 60px 40px;
   color: #f2f2f2;
   text-align: center;
   font-size: 24px;
@@ -324,6 +327,7 @@ nav a:hover {
   background: #FFFFFF;
   padding: 12px 190px 12px 60px;
   width: fit-content;
+  margin-left: 40px;
 }
 .worksteps h3 span {
   font-weight: 600;
@@ -337,7 +341,7 @@ nav a:hover {
 }
 .worksteps p {
   width: 70%;
-  margin: 20px auto 20px 60px;
+  margin: 20px auto 20px 40px;
   color: #070606;
   font-size: 24px;
   line-height: 30px;
@@ -373,7 +377,7 @@ nav a:hover {
   color: #030B46;
 }
 .item .text p {
-  font-size: 24px;
+  font-size: 20px;
   line-height: 30px;
   margin: 30px 0 0 0;
   color: #070606;
@@ -389,6 +393,7 @@ nav a:hover {
   background: #FFFFFF;
   padding: 12px 190px 12px 60px;
   width: fit-content;
+  margin-left: 40px;
 }
 .advantages h4 span {
   font-weight: 600;
@@ -402,9 +407,9 @@ nav a:hover {
 }
 .advantages p {
   width: 70%;
-  margin: 20px auto 20px 60px;
+  margin: 20px auto 20px 40px;
   color: #070606;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 30px;
 }
 
@@ -416,14 +421,14 @@ nav a:hover {
   align-items: flex-start;
 }
 
-.text {
+.adv-text {
   width: 60%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
 }
-.text h6 {
+.adv-text h6 {
   margin-left: 100px;
   margin-bottom: 30px;
   font-size: 20px;
@@ -432,7 +437,7 @@ nav a:hover {
   font-weight: 600;
   margin-top: 40px;
 }
-.text p {
+.adv-text p {
   width: 100%;
   display: flex;
   justify-content: flex-start;
@@ -441,15 +446,13 @@ nav a:hover {
   font-size: 18px;
   line-height: 24px;
 }
-.text p img {
+.adv-text p img {
   display: block;
   margin-right: 10px;
   transform: scale(90%) translateY(5px);
 }
 
 .advantages-image {
-  width: calc(1440px - 60%);
-  height: 1140px;
   background: url(../assets/adv-block.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -501,14 +504,14 @@ nav a:hover {
   left: 0;
   z-index: 10;
   width: 40%;
-  height: 85%;
-  padding: 20px;
+  height: fit-content;
+  padding: 28px 18px;
   background: rgba(3, 11, 70, 0.8);
   backdrop-filter: blur(2px);
 }
 .info h5 {
   font-weight: 600;
-  font-size: 26px;
+  font-size: 18px;
   line-height: 32px;
   text-transform: uppercase;
   color: #f2f2f2;
@@ -747,8 +750,13 @@ nav a:hover {
 
 .menu {
   position: absolute;
-  top: 10px;
+  top: 25px;
   right: 10px;
+  transform: scale(85%) scaleX(110%);
+  -webkit-transform: scale(85%) scaleX(110%);
+  -moz-transform: scale(85%) scaleX(110%);
+  -ms-transform: scale(85%) scaleX(110%);
+  -o-transform: scale(85%) scaleX(110%);
 }
 
 .line1 {
@@ -802,9 +810,7 @@ nav a:hover {
   .item .text p {
     width: 90%;
   }
-  .advantages-image {
-    transform: scale(90%);
-  }
+
 }
 @media (min-width: 992px) and (max-width: 1199px) {
   .header {
@@ -878,13 +884,23 @@ nav a:hover {
     font-size: 20px;
     width: 80%;
   }
-  .advantages .advantages-body .text {
+  .advantages .advantages-body .adv-text {
     width: 95%;
     margin: 0 auto;
   }
-  .advantages .advantages-body .text p {
+  .advantages .advantages-body .adv-text p {
     width: 100%;
   }
+  .adv-text p img {
+    width: 40px;
+    height: 4px;
+    object-fit: cover;
+    transform: translateY(10px);
+    -webkit-transform: translateY(10px);
+    -moz-transform: translateY(10px);
+    -ms-transform: translateY(10px);
+    -o-transform: translateY(10px);
+}
   .advantages-image {
     display: none;
   }
@@ -1055,17 +1071,25 @@ nav a:hover {
     line-height: 26px;
     width: 80%;
   }
-  .advantages .advantages-body .text {
+  .advantages .advantages-body .adv-text {
     width: 100%;
   }
-  .advantages .advantages-body .text p {
+  .advantages .advantages-body .adv-text p {
     width: 100%;
     font-size: 16px;
     line-height: 22px;
+    margin-left: 20px;
   }
-  .advantages .advantages-body .text p img {
-    transform: scale(50%);
-  }
+  .advantages .advantages-body .adv-text p img {
+    width: 15px;
+    height: 15px;
+    object-fit: cover;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
   .advantages-image {
     display: none;
   }
@@ -1240,6 +1264,9 @@ nav a:hover {
     font-size: 16px;
     line-height: 22px;
   }
+  .services h2 {
+    margin-left: 20px;
+  }
   .services .products {
     flex-direction: column;
     width: 100%;
@@ -1264,6 +1291,9 @@ nav a:hover {
   .about {
     background-position: center;
   }
+  .about h3 {
+    margin-left: 20px;
+  }
   .about p {
     font-size: 16px;
     line-height: 22px;
@@ -1279,6 +1309,10 @@ nav a:hover {
     font-size: 16px;
     width: 80%;
     line-height: 22px;
+    margin-left: 20px;
+  }
+  .worksteps h3 {
+    margin-left: 20px;
   }
   .steps-box {
     flex-direction: column;
@@ -1341,22 +1375,30 @@ nav a:hover {
     font-size: 18px;
     line-height: 26px;
     width: 80%;
+    margin-left: 20px;
   }
   .advantages h4 {
-    padding: 12px 20px 12px 60px;
+    padding: 12px 40px 12px 60px;
+    margin-left: 20px;
   }
-  .advantages .advantages-body .text {
+  .advantages .advantages-body .adv-text {
     width: 100%;
   }
-  .advantages .advantages-body .text p {
+  .advantages .advantages-body .adv-text p {
     width: 90%;
     margin: 10px auto;
     font-size: 16px;
     line-height: 22px;
   }
-  .advantages .advantages-body .text p img {
-    transform: translateY(8px);
-    width: 40px;
+  .advantages .advantages-body .adv-text p img {
+    width: 15px;
+    height: 15px;
+    object-fit: cover;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
   }
   .advantages-image {
     display: none;
@@ -1453,6 +1495,13 @@ nav a:hover {
   .container {
     overflow: hidden;
   }
+  .menu {
+    transform: scale(80%) scaleX(110%);
+    -webkit-transform: scale(80%) scaleX(110%);
+    -moz-transform: scale(80%) scaleX(110%);
+    -ms-transform: scale(80%) scaleX(110%);
+    -o-transform: scale(80%) scaleX(110%);
+}
   .container .line {
     transition: all 0.3s ease-in-out;
   }
@@ -1496,7 +1545,7 @@ nav a:hover {
   }
   .banner {
     flex-direction: column;
-    padding: 10px;
+    padding: 50px 10px;
     background-position: center;
   }
   .banner .offer-text {
@@ -1540,6 +1589,7 @@ nav a:hover {
   .services h2 {
     font-size: 20px;
     padding: 10px;
+    margin-left: 20px;
   }
   .services h2 span {
     font-size: 20px;
@@ -1579,6 +1629,7 @@ nav a:hover {
   .about h3 {
     padding: 10px;
     margin-top: 15px;
+    margin: 15px auto;
   }
   .about h3 span {
     font-size: 20px;
@@ -1693,22 +1744,29 @@ nav a:hover {
     font-size: 20px;
     line-height: 24px;
   }
-  .advantages .advantages-body .text {
+  .advantages .advantages-body .adv-text {
     width: 100%;
   }
-  .advantages .advantages-body .text h6 {
+  .advantages .advantages-body .adv-text h6 {
     margin: 10px auto;
   }
-  .advantages .advantages-body .text p {
+  .advantages .advantages-body .adv-text p {
     width: 90%;
     margin: 10px auto;
     font-size: 16px;
     line-height: 22px;
     text-align: left;
   }
-  .advantages .advantages-body .text p img {
-    display: none;
-  }
+  .advantages .advantages-body .adv-text p img {
+    width: 15px;
+    height: 15px;
+    object-fit: cover;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
   .advantages-image {
     display: none;
   }
